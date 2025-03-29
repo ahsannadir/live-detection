@@ -1,0 +1,9 @@
+numpy
+supabase
+ultralytics
+streamlit
+opencv-python
+numpy
+pandas
+openpyxl
+datetime
