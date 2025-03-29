@@ -3,6 +3,7 @@ supabase
 ultralytics
 streamlit
 opencv-python
+opencv-python-headless
 numpy
 pandas
 openpyxl
