@@ -9,6 +9,13 @@ from datetime import datetime, timedelta
 from supabase import create_client, Client
 from zoneinfo import ZoneInfo
 
+st.set_page_config(
+    page_title = 'Live Detection',
+    page_icon = "🔴",
+)
+
+st.title("Altnova Live Detection")
+
 # Configure logging
 logging.basicConfig(
     filename="app.log",
@@ -50,13 +57,6 @@ def update_supabase(interval_counts):
         logging.error(f"Supabase error: {str(e)}")
 
 def main():
-    st.set_page_config(
-        page_title = 'Live Detection',
-        page_icon = "🔴",
-    )
-
-    st.title("Altnova Live Detection")
-
     stframe = st.empty()
     process = subprocess.Popen(
         [
